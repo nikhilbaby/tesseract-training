@@ -26,3 +26,10 @@ The project has the following structure:
 2. Place the font in the `fonts` folder
 3. Run `./training.sh`
 
+### Tuning Parameters
+Two paramters that can be tuned to increase the performance of the model are:
+1. `MAX_PAGES`: This is the number of pages generated for training the model.
+2. `NUM_ITERATIONS`: This is the number of times the fine tuning process will happen.
+
+The paramters are available in the `training.sh file`
+
