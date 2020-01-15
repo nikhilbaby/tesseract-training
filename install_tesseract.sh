@@ -2,13 +2,10 @@
 sudo apt-get update
 
 # Install training dependencies
-sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev
-sudo apt install libtesseract-dev
-sudo apt-get install libleptonica-dev
+sudo apt-get install libicu-dev libpango1.0-dev libcairo2-dev -y
+sudo apt install libtesseract-dev -y
+sudo apt-get install libleptonica-dev -y
 
-# Create a folder save all the files
-mkdir tesseract
-cd tesseract/
 
 # Clone tesseract repo
 git clone https://github.com/tesseract-ocr/tesseract.git
@@ -36,7 +33,7 @@ git clone https://github.com/tesseract-ocr/langdata_lstm.git
 #Download the best english trained data to tessdata
 cd ./tessdata/
 wget https://github.com/tesseract-ocr/tessdata_best/raw/master/eng.traineddata
-cd ~
+
 
 
 
